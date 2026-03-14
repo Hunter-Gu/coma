@@ -1,0 +1,52 @@
+{
+  "name": "@neilguuu/coma",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A token-efficient CSV streaming library for flat structured data in LLM applications, as a lightweight alternative to streaming JSON.",
+  "keywords": [
+    "csv",
+    "parser",
+    "stream",
+    "streaming",
+    "llm"
+  ],
+  "homepage": "https://github.com/Hunter-Gu/coma#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hunter-Gu/coma.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hunter-Gu/coma/issues"
+  },
+  "author": "Neil Gu <nail.gu.hunter@gmail.com>",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "prepublishOnly": "pnpm build",
+    "test": "vitest run",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "~5.9.3",
+    "vitest": "^4.0.16"
+  }
+}
