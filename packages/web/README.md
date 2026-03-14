@@ -15,4 +15,17 @@ The demo uses a dataset of startups (id, name, industry, description). All compa
 ```bash
 # Start local dev server
 pnpm dev
+
+# Build for production
+pnpm build
 ```
+
+## 🚀 Deployment
+
+This project is configured for automated deployment to **GitHub Pages** via GitHub Actions.
+
+1.  **Repository Settings**: Go to `Settings > Pages` in your GitHub repository.
+2.  **Build and deployment**: Set "Source" to `GitHub Actions`.
+3.  **Push to main**: Any push to the `main` branch will automatically trigger the deployment workflow defined in `.github/workflows/deploy.yml`.
+
+The live demo will be available at: `https://Hunter-Gu.github.io/coma/`
