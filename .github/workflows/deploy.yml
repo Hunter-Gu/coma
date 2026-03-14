@@ -29,7 +29,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build
+      - name: Build Core Library
+        run: pnpm --filter @neilguuu/coma run build
+
+      - name: Build Web Demo
         run: pnpm --filter web run build
 
       - name: Setup Pages

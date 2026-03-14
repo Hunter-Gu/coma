@@ -1,6 +1,7 @@
 {
-  "name": "shop",
+  "name": "coma",
   "version": "1.0.0",
+  "packageManager": "pnpm@10.29.1",
   "description": "",
   "main": "index.js",
   "scripts": {
