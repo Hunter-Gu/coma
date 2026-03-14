@@ -1,0 +1,30 @@
+---
+import StreamComparison from "../components/StreamComparison"
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="Coma vs JSON Streaming">
+  <div class="space-y-8">
+    <header class="text-center space-y-4 max-w-3xl mx-auto py-12">
+      <div
+        class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-black/10 text-xs font-mono text-black/60 mb-4 tracking-widest uppercase">
+        <span class="h-1.5 w-1.5 rounded-full bg-black/40"></span>
+        Streaming Benchmark
+      </div>
+
+      <h1 class="text-5xl md:text-6xl font-normal tracking-tight">
+        <span class="text-black/40">JSON</span>
+        <span class="text-black/20 font-light mx-4 italic">vs</span>
+        <span class="text-black font-medium tracking-tight">Coma</span>
+      </h1>
+
+      <p class="text-lg text-black/60 leading-relaxed font-light mt-6">
+        A visual benchmark demonstrating why streaming AI-generated structured
+        data via CSV (Coma) is exponentially faster, cheaper, and more robust
+        than traditional JSON parsing.
+      </p>
+    </header>
+
+    <StreamComparison client:load />
+  </div>
+</Layout>
